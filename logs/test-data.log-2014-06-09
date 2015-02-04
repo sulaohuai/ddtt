@@ -1,0 +1,750 @@
+2014-06-09 22:42:05,363 [ERROR] [TestContextManager] : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@e4245] to prepare test instance [com.ddtt.testdata.service.test.StudentServiceTest@20fa83]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbMetaDataSupport' defined in class path resource [bean-ddtt.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'dataSource' threw exception; nested exception is java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:121)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'dataSource' threw exception; nested exception is java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:108)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:62)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1489)
+	... 41 more
+2014-06-09 22:42:06,675 [ERROR] [TestContextManager] : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@e4245] to prepare test instance [com.ddtt.testdata.service.test.StudentServiceTest@f8395f]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbMetaDataSupport' defined in class path resource [bean-ddtt.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'dataSource' threw exception; nested exception is java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:121)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'dataSource' threw exception; nested exception is java.sql.SQLException: Io 异常: The Network Adapter could not establish the connection
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:108)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:62)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1489)
+	... 41 more
+2014-06-09 23:12:09,499 [ERROR] [TestContextManager] : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@221e9e] to prepare test instance [com.ddtt.testdata.service.test.StudentServiceTest@83e1e]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbMetaDataSupport' defined in class path resource [bean-ddtt.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'dataSource' threw exception; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+The Connection descriptor used by the client was:
+localhost:1521:DDTT
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:121)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'dataSource' threw exception; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+The Connection descriptor used by the client was:
+localhost:1521:DDTT
+
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:108)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:62)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1489)
+	... 41 more
+2014-06-09 23:12:09,625 [ERROR] [TestContextManager] : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@221e9e] to prepare test instance [com.ddtt.testdata.service.test.StudentServiceTest@167d7fb]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbMetaDataSupport' defined in class path resource [bean-ddtt.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'dataSource' threw exception; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+The Connection descriptor used by the client was:
+localhost:1521:DDTT
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:121)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'dataSource' threw exception; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+The Connection descriptor used by the client was:
+localhost:1521:DDTT
+
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:108)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:62)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1489)
+	... 41 more
+2014-06-09 23:15:04,964 [ERROR] [DDTTExecutor] : Please provide the only parameter (1) 'syncTemplate' for synchronizing the template or (2) 'syncData' for synchronizing the test data or (3) 'generateERD' for generating the ERD hierarchy.
+2014-06-09 23:15:20,408 [INFO ] [TestDataSynchronizer] : ########## Start to sync test data ##########
+2014-06-09 23:15:20,423 [INFO ] [Configure] : D:\research\ddtt\ddtt\target\classes\test-data-config.properties is loaded from absolute path.
+2014-06-09 23:15:20,455 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:15:20,455 [INFO ] [DDTTProperties] : Excel version: 2007
+2014-06-09 23:15:20,455 [INFO ] [DDTTProperties] : Tables and versions: all
+2014-06-09 23:15:20,455 [INFO ] [DDTTProperties] : Processed tables: DDTT_, XXX_
+2014-06-09 23:15:20,455 [INFO ] [DDTTProperties] : Ignored tables: XXX_\S*|YYY_\S*
+2014-06-09 23:15:20,455 [INFO ] [DDTTProperties] : Process child tables: true
+2014-06-09 23:15:20,455 [INFO ] [DDTTProperties] : Disable triggers: false
+2014-06-09 23:15:20,455 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:15:20,455 [INFO ] [TestDataSynchronizer] : Test Data: D:\research\ddtt\ddtt\dist\template\DDTT_TEST_DATA.xlsx
+2014-06-09 23:15:22,810 [INFO ] [DatabaseProcessor] : =========== Start to get records ==========
+2014-06-09 23:23:49,839 [INFO ] [TestDataSynchronizer] : ########## Start to sync test data ##########
+2014-06-09 23:23:49,839 [INFO ] [Configure] : D:\research\ddtt\ddtt\target\classes\test-data-config.properties is loaded from absolute path.
+2014-06-09 23:23:49,854 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:23:49,854 [INFO ] [DDTTProperties] : Excel version: 2007
+2014-06-09 23:23:49,854 [INFO ] [DDTTProperties] : Tables and versions: all
+2014-06-09 23:23:49,854 [INFO ] [DDTTProperties] : Processed tables: DDTT_, XXX_
+2014-06-09 23:23:49,854 [INFO ] [DDTTProperties] : Ignored tables: XXX_\S*|YYY_\S*
+2014-06-09 23:23:49,854 [INFO ] [DDTTProperties] : Process child tables: true
+2014-06-09 23:23:49,854 [INFO ] [DDTTProperties] : Disable triggers: false
+2014-06-09 23:23:49,854 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:23:49,854 [INFO ] [TestDataSynchronizer] : Test Data: D:\research\ddtt\ddtt\dist\template\DDTT_TEST_DATA.xlsx
+2014-06-09 23:23:50,525 [INFO ] [DatabaseProcessor] : =========== Start to get records ==========
+2014-06-09 23:23:50,619 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_BOOK, version=all
+2014-06-09 23:23:50,665 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001, any data description], BOOK_NAME=Thinking in Java, ID=2, 
+2014-06-09 23:23:50,665 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001, any data description], BOOK_NAME=Thinking in Java, ID=2, 
+2014-06-09 23:23:50,665 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], BOOK_NAME=Effective Java, ID=3, 
+2014-06-09 23:23:50,665 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], BOOK_NAME=Effective Java, ID=3, 
+2014-06-09 23:23:50,665 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], BOOK_NAME=null, ID=null, 
+2014-06-09 23:23:50,681 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_BOOK
+2014-06-09 23:23:50,681 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], BOOK_NAME=null, ID=null, 
+2014-06-09 23:23:50,681 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_CLASS, version=all
+2014-06-09 23:23:50,681 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], CLASS_NAME=Physics, ID=2, 
+2014-06-09 23:23:50,681 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], CLASS_NAME=Physics, ID=2, 
+2014-06-09 23:23:50,681 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_NAME=null, ID=null, 
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_CLASS
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_NAME=null, ID=null, 
+2014-06-09 23:23:50,697 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_SCHOOL, version=all
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], SCHOOL_NAME=MIT, ID=2, 
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], SCHOOL_NAME=MIT, ID=2, 
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], SCHOOL_NAME=null, ID=null, 
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_SCHOOL
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], SCHOOL_NAME=null, ID=null, 
+2014-06-09 23:23:50,697 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT, version=all
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], NAME=Tomas, DOB=1985-01-05, ID=2, SCHOOL_ID=2, CREATED_TM=systime, 
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], NAME=Tomas, DOB=1985-01-05, ID=2, SCHOOL_ID=2, CREATED_TM=systime, 
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], NAME=null, DOB=null, ID=null, SCHOOL_ID=null, CREATED_TM=null, 
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], NAME=null, DOB=null, ID=null, SCHOOL_ID=null, CREATED_TM=null, 
+2014-06-09 23:23:50,697 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT_CLASS, version=all
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], CLASS_ID=2, STUDENT_ID=1, 
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], CLASS_ID=2, STUDENT_ID=1, 
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_ID=null, STUDENT_ID=null, 
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT_CLASS
+2014-06-09 23:23:50,697 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_ID=null, STUDENT_ID=null, 
+2014-06-09 23:23:50,697 [INFO ] [DatabaseProcessor] : =========== Get records successfully ==========
+2014-06-09 23:23:51,227 [INFO ] [DatabaseSupport] : =========== Start to clear records ==========
+2014-06-09 23:24:20,104 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK starts.
+2014-06-09 23:24:20,104 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_BOOK
+2014-06-09 23:24:20,136 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:24:20,136 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:24:20,292 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_BOOK WHERE ID = ? 
+2014-06-09 23:24:20,292 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:24:20,323 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_BOOK
+2014-06-09 23:24:20,323 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:24:20,323 [DEBUG] [DatabaseSupport] : Primary key column values: 3
+2014-06-09 23:24:20,323 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_BOOK WHERE ID = ? 
+2014-06-09 23:24:20,323 [DEBUG] [DatabaseSupport] : ID - 3 - BIG DECIMAL
+2014-06-09 23:24:20,339 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK finished. 0 record(s) are deleted.
+2014-06-09 23:24:20,339 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS starts.
+2014-06-09 23:24:20,339 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS starts.
+2014-06-09 23:24:20,339 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT_CLASS
+2014-06-09 23:24:20,339 [DEBUG] [DatabaseSupport] : Primary key column names: CLASS_ID, STUDENT_ID
+2014-06-09 23:24:20,339 [DEBUG] [DatabaseSupport] : Primary key column values: 2, 1
+2014-06-09 23:24:20,339 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT_CLASS WHERE CLASS_ID = ? and STUDENT_ID = ? 
+2014-06-09 23:24:20,339 [DEBUG] [DatabaseSupport] : CLASS_ID - 2 - BIG DECIMAL
+2014-06-09 23:24:20,339 [DEBUG] [DatabaseSupport] : STUDENT_ID - 1 - BIG DECIMAL
+2014-06-09 23:24:20,354 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS finished. 0 record(s) are deleted.
+2014-06-09 23:24:20,354 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_CLASS
+2014-06-09 23:24:20,354 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:24:20,354 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:24:20,354 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_CLASS WHERE ID = ? 
+2014-06-09 23:24:20,354 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:24:20,370 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS finished. 0 record(s) are deleted.
+2014-06-09 23:24:20,370 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL starts.
+2014-06-09 23:24:20,370 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT starts.
+2014-06-09 23:24:20,370 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT
+2014-06-09 23:24:20,370 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:24:20,370 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:24:20,370 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT WHERE ID = ? 
+2014-06-09 23:24:20,370 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:24:20,401 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT finished. 0 record(s) are deleted.
+2014-06-09 23:24:20,401 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_SCHOOL
+2014-06-09 23:24:20,401 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:24:20,401 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:24:20,401 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_SCHOOL WHERE ID = ? 
+2014-06-09 23:24:20,401 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:24:20,417 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL finished. 0 record(s) are deleted.
+2014-06-09 23:24:20,417 [INFO ] [DatabaseSupport] : =========== Clear records successfully ==========
+2014-06-09 23:24:20,417 [INFO ] [DatabaseSupport] : =========== Start to insert records ==========
+2014-06-09 23:24:20,417 [INFO ] [DatabaseSupport] : Insert DDTT_BOOK starts.
+2014-06-09 23:24:20,510 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_BOOK ("ID","BOOK_NAME") VALUES (?,?)
+2014-06-09 23:24:20,510 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:24:20,510 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-06-09 23:24:20,510 [DEBUG] [DatabaseSupport] : 2 - BOOK_NAME - Thinking in Java - STRING
+2014-06-09 23:24:20,760 [INFO ] [DatabaseSupport] : Fail to insert test data.
+2014-06-09 23:26:38,117 [INFO ] [TestDataSynchronizer] : ########## Start to sync test data ##########
+2014-06-09 23:26:38,119 [INFO ] [Configure] : D:\research\ddtt\ddtt\target\classes\test-data-config.properties is loaded from absolute path.
+2014-06-09 23:26:38,121 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:26:38,121 [INFO ] [DDTTProperties] : Excel version: 2007
+2014-06-09 23:26:38,122 [INFO ] [DDTTProperties] : Tables and versions: all
+2014-06-09 23:26:38,122 [INFO ] [DDTTProperties] : Processed tables: DDTT_, XXX_
+2014-06-09 23:26:38,122 [INFO ] [DDTTProperties] : Ignored tables: XXX_\S*|YYY_\S*
+2014-06-09 23:26:38,122 [INFO ] [DDTTProperties] : Process child tables: true
+2014-06-09 23:26:38,122 [INFO ] [DDTTProperties] : Disable triggers: false
+2014-06-09 23:26:38,122 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:26:38,122 [INFO ] [TestDataSynchronizer] : Test Data: D:\research\ddtt\ddtt\dist\template\DDTT_TEST_DATA.xlsx
+2014-06-09 23:26:38,878 [INFO ] [DatabaseProcessor] : =========== Start to get records ==========
+2014-06-09 23:26:38,886 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_BOOK, version=all
+2014-06-09 23:26:38,894 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001, any data description], BOOK_NAME=Thinking in Java, ID=2, 
+2014-06-09 23:26:38,895 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001, any data description], BOOK_NAME=Thinking in Java, ID=2, 
+2014-06-09 23:26:38,895 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], BOOK_NAME=Effective Java, ID=3, 
+2014-06-09 23:26:38,896 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], BOOK_NAME=Effective Java, ID=3, 
+2014-06-09 23:26:38,896 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], BOOK_NAME=null, ID=null, 
+2014-06-09 23:26:38,897 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_BOOK
+2014-06-09 23:26:38,897 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], BOOK_NAME=null, ID=null, 
+2014-06-09 23:26:38,898 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_CLASS, version=all
+2014-06-09 23:26:38,898 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], CLASS_NAME=Physics, ID=2, 
+2014-06-09 23:26:38,898 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], CLASS_NAME=Physics, ID=2, 
+2014-06-09 23:26:38,898 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_NAME=null, ID=null, 
+2014-06-09 23:26:38,899 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_CLASS
+2014-06-09 23:26:38,899 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_NAME=null, ID=null, 
+2014-06-09 23:26:38,900 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_SCHOOL, version=all
+2014-06-09 23:26:38,900 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], SCHOOL_NAME=MIT, ID=2, 
+2014-06-09 23:26:38,900 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], SCHOOL_NAME=MIT, ID=2, 
+2014-06-09 23:26:38,900 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], SCHOOL_NAME=null, ID=null, 
+2014-06-09 23:26:38,901 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_SCHOOL
+2014-06-09 23:26:38,901 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], SCHOOL_NAME=null, ID=null, 
+2014-06-09 23:26:38,902 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT, version=all
+2014-06-09 23:26:38,902 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], NAME=Tomas, DOB=1985-01-05, ID=2, SCHOOL_ID=2, CREATED_TM=systime, 
+2014-06-09 23:26:38,902 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], NAME=Tomas, DOB=1985-01-05, ID=2, SCHOOL_ID=2, CREATED_TM=systime, 
+2014-06-09 23:26:38,902 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], NAME=null, DOB=null, ID=null, SCHOOL_ID=null, CREATED_TM=null, 
+2014-06-09 23:26:38,903 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT
+2014-06-09 23:26:38,903 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], NAME=null, DOB=null, ID=null, SCHOOL_ID=null, CREATED_TM=null, 
+2014-06-09 23:26:38,904 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT_CLASS, version=all
+2014-06-09 23:26:38,904 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], CLASS_ID=2, STUDENT_ID=1, 
+2014-06-09 23:26:38,904 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], CLASS_ID=2, STUDENT_ID=1, 
+2014-06-09 23:26:38,904 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_ID=null, STUDENT_ID=null, 
+2014-06-09 23:26:38,904 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT_CLASS
+2014-06-09 23:26:38,905 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_ID=null, STUDENT_ID=null, 
+2014-06-09 23:26:38,905 [INFO ] [DatabaseProcessor] : =========== Get records successfully ==========
+2014-06-09 23:26:39,395 [INFO ] [DatabaseSupport] : =========== Start to clear records ==========
+2014-06-09 23:26:39,548 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK starts.
+2014-06-09 23:26:39,548 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_BOOK
+2014-06-09 23:26:39,549 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:26:39,549 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:26:39,552 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_BOOK WHERE ID = ? 
+2014-06-09 23:26:39,552 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:26:39,573 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_BOOK
+2014-06-09 23:26:39,573 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:26:39,573 [DEBUG] [DatabaseSupport] : Primary key column values: 3
+2014-06-09 23:26:39,573 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_BOOK WHERE ID = ? 
+2014-06-09 23:26:39,574 [DEBUG] [DatabaseSupport] : ID - 3 - BIG DECIMAL
+2014-06-09 23:26:39,588 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK finished. 0 record(s) are deleted.
+2014-06-09 23:26:39,588 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS starts.
+2014-06-09 23:26:39,589 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS starts.
+2014-06-09 23:26:39,589 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT_CLASS
+2014-06-09 23:26:39,589 [DEBUG] [DatabaseSupport] : Primary key column names: CLASS_ID, STUDENT_ID
+2014-06-09 23:26:39,589 [DEBUG] [DatabaseSupport] : Primary key column values: 2, 1
+2014-06-09 23:26:39,590 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT_CLASS WHERE CLASS_ID = ? and STUDENT_ID = ? 
+2014-06-09 23:26:39,590 [DEBUG] [DatabaseSupport] : CLASS_ID - 2 - BIG DECIMAL
+2014-06-09 23:26:39,591 [DEBUG] [DatabaseSupport] : STUDENT_ID - 1 - BIG DECIMAL
+2014-06-09 23:26:39,607 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS finished. 0 record(s) are deleted.
+2014-06-09 23:26:39,607 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_CLASS
+2014-06-09 23:26:39,607 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:26:39,607 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:26:39,608 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_CLASS WHERE ID = ? 
+2014-06-09 23:26:39,609 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:26:39,624 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS finished. 0 record(s) are deleted.
+2014-06-09 23:26:39,624 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL starts.
+2014-06-09 23:26:39,624 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT starts.
+2014-06-09 23:26:39,625 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT
+2014-06-09 23:26:39,625 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:26:39,625 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:26:39,627 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT WHERE ID = ? 
+2014-06-09 23:26:39,628 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:26:39,643 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT finished. 0 record(s) are deleted.
+2014-06-09 23:26:39,643 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_SCHOOL
+2014-06-09 23:26:39,643 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:26:39,643 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:26:39,645 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_SCHOOL WHERE ID = ? 
+2014-06-09 23:26:39,645 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:26:39,660 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL finished. 0 record(s) are deleted.
+2014-06-09 23:26:39,660 [INFO ] [DatabaseSupport] : =========== Clear records successfully ==========
+2014-06-09 23:26:39,661 [INFO ] [DatabaseSupport] : =========== Start to insert records ==========
+2014-06-09 23:26:39,661 [INFO ] [DatabaseSupport] : Insert DDTT_BOOK starts.
+2014-06-09 23:26:39,681 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_BOOK ("ID","BOOK_NAME") VALUES (?,?)
+2014-06-09 23:26:39,681 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:26:39,681 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-06-09 23:26:39,681 [DEBUG] [DatabaseSupport] : 2 - BOOK_NAME - Thinking in Java - STRING
+2014-06-09 23:26:39,743 [INFO ] [DatabaseSupport] : Fail to insert test data.
+2014-06-09 23:28:53,356 [INFO ] [TestDataSynchronizer] : ########## Start to sync test data ##########
+2014-06-09 23:28:53,359 [INFO ] [Configure] : D:\research\ddtt\ddtt\target\classes\test-data-config.properties is loaded from absolute path.
+2014-06-09 23:28:53,362 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:28:53,362 [INFO ] [DDTTProperties] : Excel version: 2007
+2014-06-09 23:28:53,362 [INFO ] [DDTTProperties] : Tables and versions: all
+2014-06-09 23:28:53,362 [INFO ] [DDTTProperties] : Processed tables: DDTT_, XXX_
+2014-06-09 23:28:53,362 [INFO ] [DDTTProperties] : Ignored tables: XXX_\S*|YYY_\S*
+2014-06-09 23:28:53,363 [INFO ] [DDTTProperties] : Process child tables: true
+2014-06-09 23:28:53,363 [INFO ] [DDTTProperties] : Disable triggers: false
+2014-06-09 23:28:53,363 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:28:53,363 [INFO ] [TestDataSynchronizer] : Test Data: D:\research\ddtt\ddtt\dist\template\DDTT_TEST_DATA.xlsx
+2014-06-09 23:28:54,054 [INFO ] [DatabaseProcessor] : =========== Start to get records ==========
+2014-06-09 23:28:54,061 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_BOOK, version=all
+2014-06-09 23:28:54,067 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001, any data description], BOOK_NAME=Thinking in Java, ID=2, 
+2014-06-09 23:28:54,067 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001, any data description], BOOK_NAME=Thinking in Java, ID=2, 
+2014-06-09 23:28:54,068 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], BOOK_NAME=Effective Java, ID=3, 
+2014-06-09 23:28:54,068 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], BOOK_NAME=Effective Java, ID=3, 
+2014-06-09 23:28:54,068 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], BOOK_NAME=null, ID=null, 
+2014-06-09 23:28:54,069 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_BOOK
+2014-06-09 23:28:54,069 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], BOOK_NAME=null, ID=null, 
+2014-06-09 23:28:54,070 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_CLASS, version=all
+2014-06-09 23:28:54,070 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], CLASS_NAME=Physics, ID=2, 
+2014-06-09 23:28:54,070 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], CLASS_NAME=Physics, ID=2, 
+2014-06-09 23:28:54,070 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_NAME=null, ID=null, 
+2014-06-09 23:28:54,071 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_CLASS
+2014-06-09 23:28:54,071 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_NAME=null, ID=null, 
+2014-06-09 23:28:54,071 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_SCHOOL, version=all
+2014-06-09 23:28:54,071 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], SCHOOL_NAME=MIT, ID=2, 
+2014-06-09 23:28:54,072 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], SCHOOL_NAME=MIT, ID=2, 
+2014-06-09 23:28:54,072 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], SCHOOL_NAME=null, ID=null, 
+2014-06-09 23:28:54,072 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_SCHOOL
+2014-06-09 23:28:54,072 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], SCHOOL_NAME=null, ID=null, 
+2014-06-09 23:28:54,073 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT, version=all
+2014-06-09 23:28:54,074 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], NAME=Tomas, DOB=1985-01-05, ID=2, SCHOOL_ID=2, CREATED_TM=systime, 
+2014-06-09 23:28:54,074 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], NAME=Tomas, DOB=1985-01-05, ID=2, SCHOOL_ID=2, CREATED_TM=systime, 
+2014-06-09 23:28:54,074 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], NAME=null, DOB=null, ID=null, SCHOOL_ID=null, CREATED_TM=null, 
+2014-06-09 23:28:54,075 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT
+2014-06-09 23:28:54,075 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], NAME=null, DOB=null, ID=null, SCHOOL_ID=null, CREATED_TM=null, 
+2014-06-09 23:28:54,075 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT_CLASS, version=all
+2014-06-09 23:28:54,075 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], CLASS_ID=2, STUDENT_ID=1, 
+2014-06-09 23:28:54,075 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], CLASS_ID=2, STUDENT_ID=1, 
+2014-06-09 23:28:54,075 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_ID=null, STUDENT_ID=null, 
+2014-06-09 23:28:54,076 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT_CLASS
+2014-06-09 23:28:54,076 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_ID=null, STUDENT_ID=null, 
+2014-06-09 23:28:54,076 [INFO ] [DatabaseProcessor] : =========== Get records successfully ==========
+2014-06-09 23:28:54,547 [INFO ] [DatabaseSupport] : =========== Start to clear records ==========
+2014-06-09 23:28:54,704 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK starts.
+2014-06-09 23:28:54,704 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_BOOK
+2014-06-09 23:28:54,705 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:28:54,705 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:28:54,707 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_BOOK WHERE ID = ? 
+2014-06-09 23:28:54,707 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:28:54,728 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_BOOK
+2014-06-09 23:28:54,728 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:28:54,728 [DEBUG] [DatabaseSupport] : Primary key column values: 3
+2014-06-09 23:28:54,728 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_BOOK WHERE ID = ? 
+2014-06-09 23:28:54,729 [DEBUG] [DatabaseSupport] : ID - 3 - BIG DECIMAL
+2014-06-09 23:28:54,743 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK finished. 0 record(s) are deleted.
+2014-06-09 23:28:54,743 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS starts.
+2014-06-09 23:28:54,743 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS starts.
+2014-06-09 23:28:54,743 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT_CLASS
+2014-06-09 23:28:54,743 [DEBUG] [DatabaseSupport] : Primary key column names: CLASS_ID, STUDENT_ID
+2014-06-09 23:28:54,744 [DEBUG] [DatabaseSupport] : Primary key column values: 2, 1
+2014-06-09 23:28:54,745 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT_CLASS WHERE CLASS_ID = ? and STUDENT_ID = ? 
+2014-06-09 23:28:54,745 [DEBUG] [DatabaseSupport] : CLASS_ID - 2 - BIG DECIMAL
+2014-06-09 23:28:54,745 [DEBUG] [DatabaseSupport] : STUDENT_ID - 1 - BIG DECIMAL
+2014-06-09 23:28:54,760 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS finished. 0 record(s) are deleted.
+2014-06-09 23:28:54,760 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_CLASS
+2014-06-09 23:28:54,760 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:28:54,760 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:28:54,762 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_CLASS WHERE ID = ? 
+2014-06-09 23:28:54,762 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:28:54,777 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS finished. 0 record(s) are deleted.
+2014-06-09 23:28:54,777 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL starts.
+2014-06-09 23:28:54,777 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT starts.
+2014-06-09 23:28:54,777 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT
+2014-06-09 23:28:54,777 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:28:54,777 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:28:54,779 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT WHERE ID = ? 
+2014-06-09 23:28:54,780 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:28:54,794 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT finished. 0 record(s) are deleted.
+2014-06-09 23:28:54,794 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_SCHOOL
+2014-06-09 23:28:54,794 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:28:54,794 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:28:54,796 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_SCHOOL WHERE ID = ? 
+2014-06-09 23:28:54,796 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:28:54,812 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL finished. 0 record(s) are deleted.
+2014-06-09 23:28:54,812 [INFO ] [DatabaseSupport] : =========== Clear records successfully ==========
+2014-06-09 23:28:54,812 [INFO ] [DatabaseSupport] : =========== Start to insert records ==========
+2014-06-09 23:28:54,812 [INFO ] [DatabaseSupport] : Insert DDTT_BOOK starts.
+2014-06-09 23:28:54,834 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_BOOK ("ID","BOOK_NAME") VALUES (?,?)
+2014-06-09 23:28:54,834 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:28:54,834 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-06-09 23:28:54,834 [DEBUG] [DatabaseSupport] : 2 - BOOK_NAME - Thinking in Java - STRING
+2014-06-09 23:28:54,853 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_BOOK ("ID","BOOK_NAME") VALUES (?,?)
+2014-06-09 23:28:54,853 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:28:54,853 [DEBUG] [DatabaseSupport] : 1 - ID - 3 - BIG DECIMAL
+2014-06-09 23:28:54,853 [DEBUG] [DatabaseSupport] : 2 - BOOK_NAME - Effective Java - STRING
+2014-06-09 23:28:54,868 [INFO ] [DatabaseSupport] : Insert DDTT_BOOK finished. 2 record(s) are inserted.
+2014-06-09 23:28:54,868 [INFO ] [DatabaseSupport] : Insert DDTT_CLASS starts.
+2014-06-09 23:28:54,868 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_CLASS ("ID","CLASS_NAME") VALUES (?,?)
+2014-06-09 23:28:54,868 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:28:54,868 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-06-09 23:28:54,868 [DEBUG] [DatabaseSupport] : 2 - CLASS_NAME - Physics - STRING
+2014-06-09 23:28:54,886 [INFO ] [DatabaseSupport] : Insert DDTT_CLASS finished. 1 record(s) are inserted.
+2014-06-09 23:28:54,886 [INFO ] [DatabaseSupport] : Insert DDTT_SCHOOL starts.
+2014-06-09 23:28:54,887 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_SCHOOL ("ID","SCHOOL_NAME") VALUES (?,?)
+2014-06-09 23:28:54,887 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:28:54,887 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-06-09 23:28:54,887 [DEBUG] [DatabaseSupport] : 2 - SCHOOL_NAME - MIT - STRING
+2014-06-09 23:28:54,905 [INFO ] [DatabaseSupport] : Insert DDTT_SCHOOL finished. 1 record(s) are inserted.
+2014-06-09 23:28:54,905 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT_CLASS starts.
+2014-06-09 23:28:54,905 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT starts.
+2014-06-09 23:28:54,905 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_STUDENT ("ID","NAME","DOB","CREATED_TM","SCHOOL_ID") VALUES (?,?,?,?,?)
+2014-06-09 23:28:54,905 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:28:54,905 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-06-09 23:28:54,905 [DEBUG] [DatabaseSupport] : 2 - NAME - Tomas - STRING
+2014-06-09 23:28:54,907 [DEBUG] [DatabaseSupport] : 3 - DOB - 1985-01-05 00:00:00.0 - TIMESTAMP/DATE
+2014-06-09 23:28:54,971 [DEBUG] [DatabaseSupport] : 4 - CREATED_TM - 2014-06-09 23:28:54.971 - TIMESTAMP/DATE
+2014-06-09 23:28:54,972 [DEBUG] [DatabaseSupport] : 5 - SCHOOL_ID - 2 - BIG DECIMAL
+2014-06-09 23:28:55,021 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT finished. 1 record(s) are inserted.
+2014-06-09 23:28:55,022 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_STUDENT_CLASS ("CLASS_ID","STUDENT_ID") VALUES (?,?)
+2014-06-09 23:28:55,022 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:28:55,022 [DEBUG] [DatabaseSupport] : 1 - CLASS_ID - 2 - BIG DECIMAL
+2014-06-09 23:28:55,022 [DEBUG] [DatabaseSupport] : 2 - STUDENT_ID - 1 - BIG DECIMAL
+2014-06-09 23:28:55,180 [INFO ] [DatabaseSupport] : Fail to insert test data.
+2014-06-09 23:32:38,804 [INFO ] [TestDataSynchronizer] : ########## Start to sync test data ##########
+2014-06-09 23:32:38,804 [INFO ] [Configure] : D:\research\ddtt\ddtt\target\classes\test-data-config.properties is loaded from absolute path.
+2014-06-09 23:32:38,804 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:32:38,804 [INFO ] [DDTTProperties] : Excel version: 2007
+2014-06-09 23:32:38,804 [INFO ] [DDTTProperties] : Tables and versions: DDTT_BOOK(conf),DDTT_CLASS(conf),DDTT_SCHOOL(conf)
+2014-06-09 23:32:38,804 [INFO ] [DDTTProperties] : Processed tables: DDTT_, XXX_
+2014-06-09 23:32:38,804 [INFO ] [DDTTProperties] : Ignored tables: XXX_\S*|YYY_\S*
+2014-06-09 23:32:38,804 [INFO ] [DDTTProperties] : Process child tables: true
+2014-06-09 23:32:38,804 [INFO ] [DDTTProperties] : Disable triggers: false
+2014-06-09 23:32:38,804 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:32:38,804 [INFO ] [TestDataSynchronizer] : Test Data: D:\research\ddtt\ddtt\dist\template\DDTT_TEST_DATA.xlsx
+2014-06-09 23:32:39,459 [INFO ] [DatabaseProcessor] : =========== Start to get records ==========
+2014-06-09 23:32:39,474 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_BOOK, version=conf
+2014-06-09 23:32:39,474 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001, any data description], BOOK_NAME=Thinking in Java, ID=2, 
+2014-06-09 23:32:39,474 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], BOOK_NAME=Effective Java, ID=3, 
+2014-06-09 23:32:39,474 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], BOOK_NAME=null, ID=null, 
+2014-06-09 23:32:39,474 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_BOOK
+2014-06-09 23:32:39,474 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], BOOK_NAME=null, ID=null, 
+2014-06-09 23:32:39,474 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_CLASS, version=conf
+2014-06-09 23:32:39,474 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], CLASS_NAME=Physics, ID=2, 
+2014-06-09 23:32:39,474 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_NAME=null, ID=null, 
+2014-06-09 23:32:39,474 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_CLASS
+2014-06-09 23:32:39,474 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_NAME=null, ID=null, 
+2014-06-09 23:32:39,474 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_SCHOOL, version=conf
+2014-06-09 23:32:39,474 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], SCHOOL_NAME=MIT, ID=2, 
+2014-06-09 23:32:39,474 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], SCHOOL_NAME=null, ID=null, 
+2014-06-09 23:32:39,490 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_SCHOOL
+2014-06-09 23:32:39,490 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], SCHOOL_NAME=null, ID=null, 
+2014-06-09 23:32:40,098 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT, version=all
+2014-06-09 23:32:40,098 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], NAME=Tomas, DOB=1985-01-05, ID=2, SCHOOL_ID=2, CREATED_TM=systime, 
+2014-06-09 23:32:40,098 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], NAME=Tomas, DOB=1985-01-05, ID=2, SCHOOL_ID=2, CREATED_TM=systime, 
+2014-06-09 23:32:40,098 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], NAME=null, DOB=null, ID=null, SCHOOL_ID=null, CREATED_TM=null, 
+2014-06-09 23:32:40,098 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT
+2014-06-09 23:32:40,098 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], NAME=null, DOB=null, ID=null, SCHOOL_ID=null, CREATED_TM=null, 
+2014-06-09 23:32:40,098 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT_CLASS, version=all
+2014-06-09 23:32:40,098 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], CLASS_ID=2, STUDENT_ID=1, 
+2014-06-09 23:32:40,098 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], CLASS_ID=2, STUDENT_ID=1, 
+2014-06-09 23:32:40,098 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_ID=null, STUDENT_ID=null, 
+2014-06-09 23:32:40,098 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT_CLASS
+2014-06-09 23:32:40,098 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_ID=null, STUDENT_ID=null, 
+2014-06-09 23:32:40,098 [INFO ] [DatabaseProcessor] : =========== Get records successfully ==========
+2014-06-09 23:32:40,098 [INFO ] [DatabaseSupport] : =========== Start to clear records ==========
+2014-06-09 23:32:40,098 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK starts.
+2014-06-09 23:32:40,098 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK finished. 0 record(s) are deleted.
+2014-06-09 23:32:40,098 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS starts.
+2014-06-09 23:32:40,098 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS starts.
+2014-06-09 23:32:40,114 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT_CLASS
+2014-06-09 23:32:40,114 [DEBUG] [DatabaseSupport] : Primary key column names: CLASS_ID, STUDENT_ID
+2014-06-09 23:32:40,114 [DEBUG] [DatabaseSupport] : Primary key column values: 2, 1
+2014-06-09 23:32:40,114 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT_CLASS WHERE CLASS_ID = ? and STUDENT_ID = ? 
+2014-06-09 23:32:40,114 [DEBUG] [DatabaseSupport] : CLASS_ID - 2 - BIG DECIMAL
+2014-06-09 23:32:40,114 [DEBUG] [DatabaseSupport] : STUDENT_ID - 1 - BIG DECIMAL
+2014-06-09 23:32:40,131 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS finished. 0 record(s) are deleted.
+2014-06-09 23:32:40,131 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS finished. 0 record(s) are deleted.
+2014-06-09 23:32:40,131 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL starts.
+2014-06-09 23:32:40,131 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT starts.
+2014-06-09 23:32:40,131 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT
+2014-06-09 23:32:40,131 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:32:40,131 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:32:40,131 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT WHERE ID = ? 
+2014-06-09 23:32:40,131 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT finished. 1 record(s) are deleted.
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL finished. 0 record(s) are deleted.
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : =========== Clear records successfully ==========
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : =========== Start to insert records ==========
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : Insert DDTT_BOOK starts.
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : Insert DDTT_BOOK finished. 0 record(s) are inserted.
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : Insert DDTT_CLASS starts.
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : Insert DDTT_CLASS finished. 0 record(s) are inserted.
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : Insert DDTT_SCHOOL starts.
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : Insert DDTT_SCHOOL finished. 0 record(s) are inserted.
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT_CLASS starts.
+2014-06-09 23:32:40,162 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT starts.
+2014-06-09 23:32:40,177 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_STUDENT ("ID","NAME","DOB","CREATED_TM","SCHOOL_ID") VALUES (?,?,?,?,?)
+2014-06-09 23:32:40,177 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:32:40,177 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-06-09 23:32:40,177 [DEBUG] [DatabaseSupport] : 2 - NAME - Tomas - STRING
+2014-06-09 23:32:40,177 [DEBUG] [DatabaseSupport] : 3 - DOB - 1985-01-05 00:00:00.0 - TIMESTAMP/DATE
+2014-06-09 23:32:40,177 [DEBUG] [DatabaseSupport] : 4 - CREATED_TM - 2014-06-09 23:32:40.177 - TIMESTAMP/DATE
+2014-06-09 23:32:40,177 [DEBUG] [DatabaseSupport] : 5 - SCHOOL_ID - 2 - BIG DECIMAL
+2014-06-09 23:32:40,193 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT finished. 1 record(s) are inserted.
+2014-06-09 23:32:40,193 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_STUDENT_CLASS ("CLASS_ID","STUDENT_ID") VALUES (?,?)
+2014-06-09 23:32:40,193 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:32:40,193 [DEBUG] [DatabaseSupport] : 1 - CLASS_ID - 2 - BIG DECIMAL
+2014-06-09 23:32:40,193 [DEBUG] [DatabaseSupport] : 2 - STUDENT_ID - 1 - BIG DECIMAL
+2014-06-09 23:32:40,255 [INFO ] [DatabaseSupport] : Fail to insert test data.
+2014-06-09 23:39:41,785 [INFO ] [TestDataSynchronizer] : ########## Start to sync test data ##########
+2014-06-09 23:39:41,785 [INFO ] [Configure] : D:\research\ddtt\ddtt\target\classes\test-data-config.properties is loaded from absolute path.
+2014-06-09 23:39:41,800 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:39:41,800 [INFO ] [DDTTProperties] : Excel version: 2007
+2014-06-09 23:39:41,800 [INFO ] [DDTTProperties] : Tables and versions: DDTT_BOOK(conf),DDTT_CLASS(conf),DDTT_SCHOOL(conf)
+2014-06-09 23:39:41,800 [INFO ] [DDTTProperties] : Processed tables: DDTT_, XXX_
+2014-06-09 23:39:41,800 [INFO ] [DDTTProperties] : Ignored tables: XXX_\S*|YYY_\S*
+2014-06-09 23:39:41,800 [INFO ] [DDTTProperties] : Process child tables: true
+2014-06-09 23:39:41,800 [INFO ] [DDTTProperties] : Disable triggers: false
+2014-06-09 23:39:41,800 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:39:41,800 [INFO ] [TestDataSynchronizer] : Test Data: D:\research\ddtt\ddtt\dist\template\DDTT_TEST_DATA.xlsx
+2014-06-09 23:39:42,455 [INFO ] [DatabaseProcessor] : =========== Start to get records ==========
+2014-06-09 23:39:42,455 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_BOOK, version=conf
+2014-06-09 23:39:42,455 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001, any data description], BOOK_NAME=Thinking in Java, ID=2, 
+2014-06-09 23:39:42,455 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], BOOK_NAME=Effective Java, ID=3, 
+2014-06-09 23:39:42,455 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], BOOK_NAME=null, ID=null, 
+2014-06-09 23:39:42,455 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_BOOK
+2014-06-09 23:39:42,455 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], BOOK_NAME=null, ID=null, 
+2014-06-09 23:39:42,471 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_CLASS, version=conf
+2014-06-09 23:39:42,471 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], CLASS_NAME=Physics, ID=2, 
+2014-06-09 23:39:42,471 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_NAME=null, ID=null, 
+2014-06-09 23:39:42,471 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_CLASS
+2014-06-09 23:39:42,471 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_NAME=null, ID=null, 
+2014-06-09 23:39:42,471 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_SCHOOL, version=conf
+2014-06-09 23:39:42,471 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], SCHOOL_NAME=MIT, ID=2, 
+2014-06-09 23:39:42,471 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], SCHOOL_NAME=null, ID=null, 
+2014-06-09 23:39:42,471 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_SCHOOL
+2014-06-09 23:39:42,471 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], SCHOOL_NAME=null, ID=null, 
+2014-06-09 23:39:43,079 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT, version=all
+2014-06-09 23:39:43,079 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], NAME=Tomas, DOB=1985-01-05, ID=2, SCHOOL_ID=2, CREATED_TM=systime, 
+2014-06-09 23:39:43,079 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.002], NAME=Tomas, DOB=1985-01-05, ID=2, SCHOOL_ID=2, CREATED_TM=systime, 
+2014-06-09 23:39:43,079 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], NAME=null, DOB=null, ID=null, SCHOOL_ID=null, CREATED_TM=null, 
+2014-06-09 23:39:43,079 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT
+2014-06-09 23:39:43,079 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], NAME=null, DOB=null, ID=null, SCHOOL_ID=null, CREATED_TM=null, 
+2014-06-09 23:39:43,079 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT_CLASS, version=all
+2014-06-09 23:39:43,079 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], CLASS_ID=2, STUDENT_ID=1, 
+2014-06-09 23:39:43,079 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.001], CLASS_ID=2, STUDENT_ID=1, 
+2014-06-09 23:39:43,079 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_ID=null, STUDENT_ID=null, 
+2014-06-09 23:39:43,079 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT_CLASS
+2014-06-09 23:39:43,079 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_ID=null, STUDENT_ID=null, 
+2014-06-09 23:39:43,079 [INFO ] [DatabaseProcessor] : =========== Get records successfully ==========
+2014-06-09 23:39:43,079 [INFO ] [DatabaseSupport] : =========== Start to clear records ==========
+2014-06-09 23:39:43,079 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK starts.
+2014-06-09 23:39:43,079 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK finished. 0 record(s) are deleted.
+2014-06-09 23:39:43,079 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS starts.
+2014-06-09 23:39:43,079 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS starts.
+2014-06-09 23:39:43,095 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT_CLASS
+2014-06-09 23:39:43,095 [DEBUG] [DatabaseSupport] : Primary key column names: CLASS_ID, STUDENT_ID
+2014-06-09 23:39:43,095 [DEBUG] [DatabaseSupport] : Primary key column values: 2, 1
+2014-06-09 23:39:43,095 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT_CLASS WHERE CLASS_ID = ? and STUDENT_ID = ? 
+2014-06-09 23:39:43,095 [DEBUG] [DatabaseSupport] : CLASS_ID - 2 - BIG DECIMAL
+2014-06-09 23:39:43,095 [DEBUG] [DatabaseSupport] : STUDENT_ID - 1 - BIG DECIMAL
+2014-06-09 23:39:43,112 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS finished. 0 record(s) are deleted.
+2014-06-09 23:39:43,112 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS finished. 0 record(s) are deleted.
+2014-06-09 23:39:43,112 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL starts.
+2014-06-09 23:39:43,112 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT starts.
+2014-06-09 23:39:43,112 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT
+2014-06-09 23:39:43,112 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-06-09 23:39:43,112 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-06-09 23:39:43,112 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT WHERE ID = ? 
+2014-06-09 23:39:43,112 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT finished. 1 record(s) are deleted.
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL finished. 0 record(s) are deleted.
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : =========== Clear records successfully ==========
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : =========== Start to insert records ==========
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : Insert DDTT_BOOK starts.
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : Insert DDTT_BOOK finished. 0 record(s) are inserted.
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : Insert DDTT_CLASS starts.
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : Insert DDTT_CLASS finished. 0 record(s) are inserted.
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : Insert DDTT_SCHOOL starts.
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : Insert DDTT_SCHOOL finished. 0 record(s) are inserted.
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT_CLASS starts.
+2014-06-09 23:39:43,127 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT starts.
+2014-06-09 23:39:43,158 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_STUDENT ("ID","NAME","DOB","CREATED_TM","SCHOOL_ID") VALUES (?,?,?,?,?)
+2014-06-09 23:39:43,158 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:39:43,158 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-06-09 23:39:43,158 [DEBUG] [DatabaseSupport] : 2 - NAME - Tomas - STRING
+2014-06-09 23:39:43,158 [DEBUG] [DatabaseSupport] : 3 - DOB - 1985-01-05 00:00:00.0 - TIMESTAMP/DATE
+2014-06-09 23:39:43,158 [DEBUG] [DatabaseSupport] : 4 - CREATED_TM - 2014-06-09 23:39:43.158 - TIMESTAMP/DATE
+2014-06-09 23:39:43,158 [DEBUG] [DatabaseSupport] : 5 - SCHOOL_ID - 2 - BIG DECIMAL
+2014-06-09 23:39:43,174 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT finished. 1 record(s) are inserted.
+2014-06-09 23:39:43,174 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_STUDENT_CLASS ("CLASS_ID","STUDENT_ID") VALUES (?,?)
+2014-06-09 23:39:43,174 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-06-09 23:39:43,174 [DEBUG] [DatabaseSupport] : 1 - CLASS_ID - 2 - BIG DECIMAL
+2014-06-09 23:39:43,174 [DEBUG] [DatabaseSupport] : 2 - STUDENT_ID - 1 - BIG DECIMAL
+2014-06-09 23:39:43,236 [INFO ] [DatabaseSupport] : Fail to insert test data.
+2014-06-09 23:40:32,674 [INFO ] [DBMetaDataSupport] : ########### Start to print ERD ###########
+2014-06-09 23:40:32,690 [INFO ] [Configure] : D:\research\ddtt\ddtt\target\classes\test-data-config.properties is loaded from absolute path.
+2014-06-09 23:40:32,690 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:40:32,690 [INFO ] [DDTTProperties] : Excel version: 2007
+2014-06-09 23:40:32,690 [INFO ] [DDTTProperties] : Tables and versions: DDTT_BOOK(conf),DDTT_CLASS(conf),DDTT_SCHOOL(conf)
+2014-06-09 23:40:32,690 [INFO ] [DDTTProperties] : Processed tables: DDTT_, XXX_
+2014-06-09 23:40:32,690 [INFO ] [DDTTProperties] : Ignored tables: XXX_\S*|YYY_\S*
+2014-06-09 23:40:32,690 [INFO ] [DDTTProperties] : Process child tables: true
+2014-06-09 23:40:32,690 [INFO ] [DDTTProperties] : Disable triggers: false
+2014-06-09 23:40:32,690 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-06-09 23:40:32,846 [INFO ] [DBMetaDataSupport] : ERD ==> DDTT_BOOK
+2014-06-09 23:40:32,846 [INFO ] [DBMetaDataSupport] : ERD ==> DDTT_CLASS
+2014-06-09 23:40:32,846 [INFO ] [DBMetaDataSupport] : ERD ==> 	|-DDTT_STUDENT_CLASS
+2014-06-09 23:40:32,846 [INFO ] [DBMetaDataSupport] : ERD ==> DDTT_SCHOOL
+2014-06-09 23:40:32,846 [INFO ] [DBMetaDataSupport] : ERD ==> 	|-DDTT_STUDENT
+2014-06-09 23:40:32,846 [INFO ] [DBMetaDataSupport] : ERD ==> 		|-DDTT_STUDENT_CLASS
+2014-06-09 23:40:32,846 [INFO ] [DBMetaDataSupport] : ########### Print ERD finished ###########

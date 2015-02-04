@@ -1,0 +1,189 @@
+2014-07-02 21:53:17,357 [INFO ] [TestDataSynchronizer] : ########## Start to sync test data ##########
+2014-07-02 21:53:17,408 [INFO ] [Configure] : D:\research\ddtt\ddtt\target\classes\test-data-config.properties is loaded from absolute path.
+2014-07-02 21:53:17,428 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-07-02 21:53:17,428 [INFO ] [DDTTProperties] : Excel version: 2007
+2014-07-02 21:53:17,428 [INFO ] [DDTTProperties] : Tables and versions: DDTT_BOOK(static),DDTT_CLASS(static),DDTT_SCHOOL(static)
+2014-07-02 21:53:17,428 [INFO ] [DDTTProperties] : Processed tables: DDTT_, XXX_
+2014-07-02 21:53:17,428 [INFO ] [DDTTProperties] : Ignored tables: XXX_\S*|YYY_\S*
+2014-07-02 21:53:17,428 [INFO ] [DDTTProperties] : Process child tables: true
+2014-07-02 21:53:17,428 [INFO ] [DDTTProperties] : Disable triggers: false
+2014-07-02 21:53:17,428 [INFO ] [DDTTProperties] : ########## Configurations ##########
+2014-07-02 21:53:17,428 [INFO ] [TestDataSynchronizer] : Test Data: D:\research\ddtt\ddtt\dist\template\DDTT_TEST_DATA.xlsx
+2014-07-02 21:53:18,978 [INFO ] [DatabaseProcessor] : =========== Start to get records ==========
+2014-07-02 21:56:25,359 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_BOOK, version=static
+2014-07-02 21:56:25,410 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], BOOK_NAME=Core Java, ID=1, 
+2014-07-02 21:56:25,410 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], BOOK_NAME=Core Java, ID=1, 
+2014-07-02 21:56:25,410 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], BOOK_NAME=Thinking in Java, ID=2, 
+2014-07-02 21:56:25,410 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], BOOK_NAME=Thinking in Java, ID=2, 
+2014-07-02 21:56:25,420 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], BOOK_NAME=Effective Java, ID=3, 
+2014-07-02 21:56:25,420 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], BOOK_NAME=Effective Java, ID=3, 
+2014-07-02 21:56:25,420 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], BOOK_NAME=null, ID=null, 
+2014-07-02 21:56:33,390 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_BOOK
+2014-07-02 21:56:33,390 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=DEFAULT VALUE], BOOK_NAME=, ID=, 
+2014-07-02 21:56:51,710 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_CLASS, version=static
+2014-07-02 21:56:51,710 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], CLASS_NAME=Math, ID=1, 
+2014-07-02 21:56:51,710 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], CLASS_NAME=Math, ID=1, 
+2014-07-02 21:56:51,710 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], CLASS_NAME=Physics, ID=2, 
+2014-07-02 21:56:51,710 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], CLASS_NAME=Physics, ID=2, 
+2014-07-02 21:56:51,710 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_NAME=null, ID=null, 
+2014-07-02 21:56:51,710 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_CLASS
+2014-07-02 21:56:51,720 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=DEFAULT VALUE], CLASS_NAME=, ID=, 
+2014-07-02 21:56:59,791 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_SCHOOL, version=static
+2014-07-02 21:56:59,791 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], SCHOOL_NAME=Cambirdge University, ID=1, 
+2014-07-02 21:56:59,791 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], SCHOOL_NAME=Cambirdge University, ID=1, 
+2014-07-02 21:56:59,791 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], SCHOOL_NAME=MIT, ID=2, 
+2014-07-02 21:56:59,791 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=static], SCHOOL_NAME=MIT, ID=2, 
+2014-07-02 21:56:59,791 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], SCHOOL_NAME=null, ID=null, 
+2014-07-02 21:56:59,791 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_SCHOOL
+2014-07-02 21:56:59,791 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=DEFAULT VALUE], SCHOOL_NAME=, ID=, 
+2014-07-02 21:58:06,372 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT, version=all
+2014-07-02 21:58:06,372 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.04, StudentServiceTest.findStudentTest()], NAME=Jason, DOB=sysdate, ID=1, SCHOOL_ID=1, CREATED_TM=null, 
+2014-07-02 21:58:06,372 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.04, StudentServiceTest.findStudentTest()], NAME=Jason, DOB=sysdate, ID=1, SCHOOL_ID=1, CREATED_TM=null, 
+2014-07-02 21:58:06,372 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.04, StudentServiceTest.deleteStudentTest()], NAME=Tomas, DOB=null, ID=2, SCHOOL_ID=2, CREATED_TM=null, 
+2014-07-02 21:58:06,372 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.04, StudentServiceTest.deleteStudentTest()], NAME=Tomas, DOB=null, ID=2, SCHOOL_ID=2, CREATED_TM=null, 
+2014-07-02 21:58:06,372 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], NAME=null, DOB=null, ID=null, SCHOOL_ID=null, CREATED_TM=null, 
+2014-07-02 21:58:06,382 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT
+2014-07-02 21:58:06,382 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=DEFAULT VALUE], NAME=, DOB=2014-07-01, ID=, SCHOOL_ID=, CREATED_TM=systime, 
+2014-07-02 21:58:06,392 [INFO ] [ExcelReader4Sheet] : Get record list of sheet=DDTT_STUDENT_CLASS, version=all
+2014-07-02 21:58:06,392 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.04, StudentServiceTest.findStudentTest()], CLASS_ID=1, STUDENT_ID=1, 
+2014-07-02 21:58:06,392 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.04, StudentServiceTest.findStudentTest()], CLASS_ID=1, STUDENT_ID=1, 
+2014-07-02 21:58:06,392 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.04, StudentServiceTest.deleteStudentTest()], CLASS_ID=2, STUDENT_ID=2, 
+2014-07-02 21:58:06,392 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=0.04, StudentServiceTest.deleteStudentTest()], CLASS_ID=2, STUDENT_ID=2, 
+2014-07-02 21:58:06,392 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=], CLASS_ID=null, STUDENT_ID=null, 
+2014-07-02 21:58:06,392 [DEBUG] [ExcelReader4Sheet] : Get default value of sheet=DDTT_STUDENT_CLASS
+2014-07-02 21:58:06,392 [DEBUG] [ExcelReader4Sheet] : [Test Data Remarks=DEFAULT VALUE], CLASS_ID=, STUDENT_ID=, 
+2014-07-02 21:58:06,392 [INFO ] [DatabaseProcessor] : =========== Get records successfully ==========
+2014-07-02 21:58:06,392 [INFO ] [DatabaseProcessor] : =========== Start to sort tables ==========
+2014-07-02 21:58:06,433 [INFO ] [DatabaseProcessor] : =========== Sort tables successfully ==========
+2014-07-02 21:58:06,493 [INFO ] [DatabaseSupport] : =========== Start to clear records ==========
+2014-07-02 21:58:06,493 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS starts.
+2014-07-02 21:58:06,493 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT_CLASS
+2014-07-02 21:58:06,493 [DEBUG] [DatabaseSupport] : Primary key column names: CLASS_ID, STUDENT_ID
+2014-07-02 21:58:06,493 [DEBUG] [DatabaseSupport] : Primary key column values: 1, 1
+2014-07-02 21:58:06,493 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT_CLASS WHERE CLASS_ID = ? and STUDENT_ID = ? 
+2014-07-02 21:58:06,493 [DEBUG] [DatabaseSupport] : CLASS_ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,493 [DEBUG] [DatabaseSupport] : STUDENT_ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,513 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT_CLASS
+2014-07-02 21:58:06,513 [DEBUG] [DatabaseSupport] : Primary key column names: CLASS_ID, STUDENT_ID
+2014-07-02 21:58:06,513 [DEBUG] [DatabaseSupport] : Primary key column values: 2, 2
+2014-07-02 21:58:06,513 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT_CLASS WHERE CLASS_ID = ? and STUDENT_ID = ? 
+2014-07-02 21:58:06,513 [DEBUG] [DatabaseSupport] : CLASS_ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,513 [DEBUG] [DatabaseSupport] : STUDENT_ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,523 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT_CLASS finished. 0 record(s) are deleted.
+2014-07-02 21:58:06,523 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT starts.
+2014-07-02 21:58:06,523 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT
+2014-07-02 21:58:06,523 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-07-02 21:58:06,523 [DEBUG] [DatabaseSupport] : Primary key column values: 1
+2014-07-02 21:58:06,533 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT WHERE ID = ? 
+2014-07-02 21:58:06,533 [DEBUG] [DatabaseSupport] : ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,543 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_STUDENT
+2014-07-02 21:58:06,543 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-07-02 21:58:06,543 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-07-02 21:58:06,543 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_STUDENT WHERE ID = ? 
+2014-07-02 21:58:06,543 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,563 [INFO ] [DatabaseSupport] : Clear DDTT_STUDENT finished. 2 record(s) are deleted.
+2014-07-02 21:58:06,563 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL starts.
+2014-07-02 21:58:06,563 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_SCHOOL
+2014-07-02 21:58:06,563 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-07-02 21:58:06,563 [DEBUG] [DatabaseSupport] : Primary key column values: 1
+2014-07-02 21:58:06,563 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_SCHOOL WHERE ID = ? 
+2014-07-02 21:58:06,563 [DEBUG] [DatabaseSupport] : ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,573 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_SCHOOL
+2014-07-02 21:58:06,573 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-07-02 21:58:06,573 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-07-02 21:58:06,573 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_SCHOOL WHERE ID = ? 
+2014-07-02 21:58:06,573 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,593 [INFO ] [DatabaseSupport] : Clear DDTT_SCHOOL finished. 2 record(s) are deleted.
+2014-07-02 21:58:06,593 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS starts.
+2014-07-02 21:58:06,593 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_CLASS
+2014-07-02 21:58:06,593 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-07-02 21:58:06,593 [DEBUG] [DatabaseSupport] : Primary key column values: 1
+2014-07-02 21:58:06,593 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_CLASS WHERE ID = ? 
+2014-07-02 21:58:06,593 [DEBUG] [DatabaseSupport] : ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,603 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_CLASS
+2014-07-02 21:58:06,603 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-07-02 21:58:06,603 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-07-02 21:58:06,603 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_CLASS WHERE ID = ? 
+2014-07-02 21:58:06,603 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,623 [INFO ] [DatabaseSupport] : Clear DDTT_CLASS finished. 2 record(s) are deleted.
+2014-07-02 21:58:06,623 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK starts.
+2014-07-02 21:58:06,623 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_BOOK
+2014-07-02 21:58:06,623 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-07-02 21:58:06,623 [DEBUG] [DatabaseSupport] : Primary key column values: 1
+2014-07-02 21:58:06,623 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_BOOK WHERE ID = ? 
+2014-07-02 21:58:06,623 [DEBUG] [DatabaseSupport] : ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,643 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_BOOK
+2014-07-02 21:58:06,643 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-07-02 21:58:06,643 [DEBUG] [DatabaseSupport] : Primary key column values: 2
+2014-07-02 21:58:06,643 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_BOOK WHERE ID = ? 
+2014-07-02 21:58:06,643 [DEBUG] [DatabaseSupport] : ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,653 [DEBUG] [DatabaseSupport] : Delete data from table DDTT_BOOK
+2014-07-02 21:58:06,653 [DEBUG] [DatabaseSupport] : Primary key column names: ID
+2014-07-02 21:58:06,653 [DEBUG] [DatabaseSupport] : Primary key column values: 3
+2014-07-02 21:58:06,653 [DEBUG] [DatabaseSupport] : DELETE FROM DDTT_BOOK WHERE ID = ? 
+2014-07-02 21:58:06,653 [DEBUG] [DatabaseSupport] : ID - 3 - BIG DECIMAL
+2014-07-02 21:58:06,663 [INFO ] [DatabaseSupport] : Clear DDTT_BOOK finished. 3 record(s) are deleted.
+2014-07-02 21:58:06,663 [INFO ] [DatabaseSupport] : =========== Clear records successfully ==========
+2014-07-02 21:58:06,663 [INFO ] [DatabaseSupport] : =========== Start to insert records ==========
+2014-07-02 21:58:06,663 [INFO ] [DatabaseSupport] : Insert DDTT_BOOK starts.
+2014-07-02 21:58:06,723 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_BOOK ("ID","BOOK_NAME") VALUES (?,?)
+2014-07-02 21:58:06,723 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-07-02 21:58:06,723 [DEBUG] [DatabaseSupport] : 1 - ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,723 [DEBUG] [DatabaseSupport] : 2 - BOOK_NAME - Core Java - STRING
+2014-07-02 21:58:06,733 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_BOOK ("ID","BOOK_NAME") VALUES (?,?)
+2014-07-02 21:58:06,733 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-07-02 21:58:06,733 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,733 [DEBUG] [DatabaseSupport] : 2 - BOOK_NAME - Thinking in Java - STRING
+2014-07-02 21:58:06,753 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_BOOK ("ID","BOOK_NAME") VALUES (?,?)
+2014-07-02 21:58:06,753 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-07-02 21:58:06,753 [DEBUG] [DatabaseSupport] : 1 - ID - 3 - BIG DECIMAL
+2014-07-02 21:58:06,753 [DEBUG] [DatabaseSupport] : 2 - BOOK_NAME - Effective Java - STRING
+2014-07-02 21:58:06,773 [INFO ] [DatabaseSupport] : Insert DDTT_BOOK finished. 3 record(s) are inserted.
+2014-07-02 21:58:06,773 [INFO ] [DatabaseSupport] : Insert DDTT_CLASS starts.
+2014-07-02 21:58:06,773 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_CLASS ("ID","CLASS_NAME") VALUES (?,?)
+2014-07-02 21:58:06,773 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-07-02 21:58:06,773 [DEBUG] [DatabaseSupport] : 1 - ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,773 [DEBUG] [DatabaseSupport] : 2 - CLASS_NAME - Math - STRING
+2014-07-02 21:58:06,783 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_CLASS ("ID","CLASS_NAME") VALUES (?,?)
+2014-07-02 21:58:06,783 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-07-02 21:58:06,783 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,783 [DEBUG] [DatabaseSupport] : 2 - CLASS_NAME - Physics - STRING
+2014-07-02 21:58:06,803 [INFO ] [DatabaseSupport] : Insert DDTT_CLASS finished. 2 record(s) are inserted.
+2014-07-02 21:58:06,803 [INFO ] [DatabaseSupport] : Insert DDTT_SCHOOL starts.
+2014-07-02 21:58:06,803 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_SCHOOL ("ID","SCHOOL_NAME") VALUES (?,?)
+2014-07-02 21:58:06,803 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-07-02 21:58:06,803 [DEBUG] [DatabaseSupport] : 1 - ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,803 [DEBUG] [DatabaseSupport] : 2 - SCHOOL_NAME - Cambirdge University - STRING
+2014-07-02 21:58:06,813 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_SCHOOL ("ID","SCHOOL_NAME") VALUES (?,?)
+2014-07-02 21:58:06,813 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-07-02 21:58:06,813 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,813 [DEBUG] [DatabaseSupport] : 2 - SCHOOL_NAME - MIT - STRING
+2014-07-02 21:58:06,833 [INFO ] [DatabaseSupport] : Insert DDTT_SCHOOL finished. 2 record(s) are inserted.
+2014-07-02 21:58:06,833 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT starts.
+2014-07-02 21:58:06,833 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_STUDENT ("ID","NAME","DOB","CREATED_TM","SCHOOL_ID") VALUES (?,?,?,?,?)
+2014-07-02 21:58:06,833 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-07-02 21:58:06,833 [DEBUG] [DatabaseSupport] : 1 - ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,833 [DEBUG] [DatabaseSupport] : 2 - NAME - Jason - STRING
+2014-07-02 21:58:06,853 [DEBUG] [DatabaseSupport] : 3 - DOB - Wed Jul 02 00:00:00 CST 2014 - TIMESTAMP/DATE
+2014-07-02 21:58:06,853 [DEBUG] [DatabaseSupport] : 4 - CREATED_TM - 2014-07-02 21:58:06.853 - TIMESTAMP/DATE
+2014-07-02 21:58:06,853 [DEBUG] [DatabaseSupport] : 5 - SCHOOL_ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,883 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_STUDENT ("ID","NAME","DOB","CREATED_TM","SCHOOL_ID") VALUES (?,?,?,?,?)
+2014-07-02 21:58:06,883 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-07-02 21:58:06,883 [DEBUG] [DatabaseSupport] : 1 - ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,883 [DEBUG] [DatabaseSupport] : 2 - NAME - Tomas - STRING
+2014-07-02 21:58:06,883 [DEBUG] [DatabaseSupport] : 3 - DOB - 2014-07-01 00:00:00.0 - TIMESTAMP/DATE
+2014-07-02 21:58:06,883 [DEBUG] [DatabaseSupport] : 4 - CREATED_TM - 2014-07-02 21:58:06.883 - TIMESTAMP/DATE
+2014-07-02 21:58:06,883 [DEBUG] [DatabaseSupport] : 5 - SCHOOL_ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,903 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT finished. 2 record(s) are inserted.
+2014-07-02 21:58:06,903 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT_CLASS starts.
+2014-07-02 21:58:06,903 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_STUDENT_CLASS ("CLASS_ID","STUDENT_ID") VALUES (?,?)
+2014-07-02 21:58:06,903 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-07-02 21:58:06,903 [DEBUG] [DatabaseSupport] : 1 - CLASS_ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,903 [DEBUG] [DatabaseSupport] : 2 - STUDENT_ID - 1 - BIG DECIMAL
+2014-07-02 21:58:06,943 [DEBUG] [DatabaseSupport] : INSERT INTO DDTT_STUDENT_CLASS ("CLASS_ID","STUDENT_ID") VALUES (?,?)
+2014-07-02 21:58:06,943 [DEBUG] [DatabaseSupport] : Parameters: 
+2014-07-02 21:58:06,943 [DEBUG] [DatabaseSupport] : 1 - CLASS_ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,943 [DEBUG] [DatabaseSupport] : 2 - STUDENT_ID - 2 - BIG DECIMAL
+2014-07-02 21:58:06,963 [INFO ] [DatabaseSupport] : Insert DDTT_STUDENT_CLASS finished. 2 record(s) are inserted.
+2014-07-02 21:58:06,963 [INFO ] [DatabaseSupport] : =========== Insert records successfully ==========
+2014-07-02 21:58:06,993 [INFO ] [TestDataSynchronizer] : ########## Test data is sync successfully! ##########
